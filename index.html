@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hoardie: Save anything, keep the original</title>
+<meta name="description" content="Hoardie saves public photos, videos, reels and pins from Instagram, TikTok, Pinterest, X and YouTube in their original quality. Copy a link, tap Hoardie, done.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070708" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Hoardie: Save anything, keep the original">
+<meta property="og:description" content="Copy a link, tap Hoardie. The original photo or video lands in your library.">
+<meta property="og:image" content="https://haafisw.github.io/hoardie/assets/icon.png">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="site.css?v=20261127">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/icon.png" alt="">Hoardie</a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a><a href="#features">Features</a><a href="#mac">Your Mac</a><a href="#gallery">Gallery</a><a href="#support">Support</a>
+    </nav>
+    <a class="btn btn-ink btn-sm" href="#beta">Get the beta</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="rings" aria-hidden="true" style="top:250px">
+      <span style="width:220px;height:220px"></span><span style="width:340px;height:340px;animation-delay:.6s"></span><span style="width:480px;height:480px;animation-delay:1.2s"></span>
+    </div>
+    <div class="wrap">
+      <span class="mark" id="heroMark"><img src="assets/icon.png" alt="Hoardie"></span>
+      <h1 class="display words" data-words>Save anything, <span class="accent">keep</span> the original.</h1>
+      <p class="lede rv" style="--d:.35s">Hoardie keeps the photos, videos, reels and pins you love, in the exact quality they were posted. Copy a link, tap Hoardie, and it's in your library.</p>
+      <div class="cta rv" style="--d:.5s">
+        <a class="btn btn-ink" href="#beta"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 1v10M2.5 6.5 7 11l4.5-4.5M1 15h12"/></svg>Get the iPhone beta</a>
+        <a class="btn btn-ghost" href="#how">See how it works <span class="arr">→</span></a>
+      </div>
+      <p class="note rv" style="--d:.6s">Free beta · iPhone now, Mac next · Public posts only</p>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="phone p-left" data-par="-0.10" data-img="assets/5-history.jpg"></div>
+      <div class="phone p-center" data-par="0" data-img="assets/1-home.jpg"></div>
+      <div class="phone p-right" data-par="-0.10" data-img="assets/2-preview.jpg"></div>
+      <div class="chip" data-par="-0.22" style="left:calc(50% - 470px);top:470px">
+        <img class="thumb" src="assets/demo/scene2.png" alt="">
+        <span><b>Saved to Photos</b><small>3 photos · 1440 × 1800</small></span>
+      </div>
+      <div class="chip" data-par="-0.30" style="left:calc(50% + 230px);top:300px">
+        <span class="ico pos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+        <span><b>Original quality</b><small>Nothing re-encoded</small></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Film -->
+  <section class="film-sec" id="film">
+    <div class="film" id="film-frame">
+      <video id="filmVideo" src="assets/hoardie-film.mp4" poster="assets/hoardie-film.jpg" muted loop playsinline preload="metadata"></video>
+      <button class="sound" id="soundBtn" aria-label="Turn sound on">
+        <svg id="sndOff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M22 9l-6 6M16 9l6 6"/></svg>
+        <svg id="sndOn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M19 5a10 10 0 010 14"/></svg>
+      </button>
+    </div>
+    <p class="film-cap rv">The Hoardie film · 15 seconds</p>
+  </section>
+
+  <!-- Story: a link turns into a saved original as you scroll -->
+  <section class="story" id="how">
+    <div class="pin">
+      <div>
+        <p class="eyebrow rv">How it works</p>
+        <h2 class="display rv" style="--d:.1s">From link to <span class="accent">library</span> in one tap.</h2>
+        <p class="lede rv" style="--d:.2s;margin-top:22px">Hoardie reads the post, shows you what's inside, and saves the best file the platform has. No screen recording, no screenshots, no lost quality.</p>
+        <div class="steps rv" style="--d:.26s" id="steps"><span class="on">Paste</span><span>Preview</span><span>Save</span><span>Kept</span></div>
+        <div class="count rv" style="--d:.3s">
+          <div><b id="cTaps">0</b><span>Taps</span></div>
+          <div><b id="cMb">0 MB</b><span>Saved, full size</span></div>
+          <div><b>0%</b><span>Quality lost</span></div>
+        </div>
+      </div>
+      <div class="app rv" style="--d:.15s" aria-hidden="true">
+        <div class="toast" id="aToast"><img src="assets/demo/scene0.png" alt="">Saved to Photos</div>
+        <div class="field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span class="url" id="aUrl"></span><span class="caret" id="aCaret"></span>
+          <span class="go" id="aGo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+        <div class="card">
+          <div class="who"><span class="av">M</span><span><b>@mira.walks</b><small>3 photos · Golden hour on the ridge</small></span></div>
+          <div class="media" id="aMedia"><div class="sk"></div><img src="assets/demo/scene0.png" alt=""></div>
+          <div class="save" id="aSave"><i id="aFill"></i><span id="aSaveTxt">Save to Photos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="sec" id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow rv">Features</p>
+        <h2 class="display rv" style="--d:.08s">Small app.<br>Big appetite.</h2>
+        <p class="lede rv" style="--d:.16s">Hoardie does one job and does it carefully: it keeps what you find, exactly as it was posted.</p>
+      </div>
+      <div class="bento">
+        <article class="tile t-4 rv">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></span>
+          <h3>The original file. Untouched.</h3>
+          <p>Full resolution, the original format, the sound that came with it. Hoardie never re-encodes, crops or compresses what it saves.</p>
+          <div class="shot"><img src="assets/2-preview.jpg" alt="A post preview in Hoardie showing three photos at 1440 by 1800" loading="lazy"></div>
+        </article>
+        <article class="tile t-2 dark rv" style="--d:.08s">
+          <span class="ico" style="background:rgba(255,255,255,.12)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="4" width="12" height="17" rx="3"/><path d="M9 4.5v-.7A1.8 1.8 0 0 1 10.8 2h2.4A1.8 1.8 0 0 1 15 3.8v.7"/></svg></span>
+          <h3>One tap.</h3>
+          <p>Copy a link anywhere. Tap Hoardie. That's the whole routine.</p>
+          <div class="orb" id="orb" role="img" aria-label="The Hoardie button"><span class="eye"><i></i></span><span class="eye"><i></i></span></div>
+        </article>
+        <article class="tile t-3 rv">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="7" height="7" rx="2"/><rect x="14" y="4" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span>
+          <h3>Every feed you scroll.</h3>
+          <p>Public posts from the places you actually spend time.</p>
+          <div class="plats"><span>Instagram</span><span>TikTok</span><span>Pinterest</span><span>X</span><span>YouTube</span><span>Threads</span><span>Facebook</span></div>
+        </article>
+        <article class="tile t-3 white rv" style="--d:.08s">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="3"/><path d="M7 3h11a3 3 0 0 1 3 3v11"/></svg></span>
+          <h3>Whole carousels at once.</h3>
+          <p>Every photo and clip in a post comes along, in order, from a single save.</p>
+          <div style="margin-top:28px"><div class="big-num"><span data-count="1">0</span></div><p style="margin-top:6px">tap for the whole post</p></div>
+        </article>
+        <article class="tile t-2 rv">
+          <span class="ico light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg></span>
+          <h3>Photos or Files.</h3>
+          <p>Straight into your camera roll, or tucked away in Files. Your call.</p>
+          <div class="shot" style="width:150px;right:-30px;top:200px;transform:rotate(-8deg)"><img src="assets/6-settings.jpg" alt="Hoardie settings with Photos and Files" loading="lazy"></div>
+        </article>
+        <article class="tile t-4 rv" style="--d:.08s">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>A history worth keeping.</h3>
+          <p>Everything you've saved, with who posted it and where. Filter, reopen the original post, or let it go with an undo.</p>
+          <div class="seg" id="seg"><span class="on">All<small>6</small></span><span>Photos<small>3</small></span><span>Videos<small>3</small></span></div>
+          <div class="shot" style="top:60px"><img src="assets/5-history.jpg" alt="Hoardie history grid" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Mac -->
+  <section class="sec" id="mac" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow rv">Hoardie Helper</p>
+        <h2 class="display rv" style="--d:.08s">Your Mac does<br>the heavy lifting.</h2>
+        <p class="lede rv" style="--d:.16s">A small helper runs on your Mac and reads links for your iPhone over Wi-Fi. No Hoardie server sits in between. A full Mac app is on its way.</p>
+      </div>
+      <div class="helper" id="macShot" role="img" aria-label="Hoardie Helper running in a Mac terminal">
+        <div class="bar"><i></i><i></i><i></i><span>Hoardie Helper</span></div>
+<pre><span class="ok">●</span> <b>Hoardie Helper is running</b>
+
+<span class="dim">Mac address  </span> MacBook-Pro.local:8787
+<span class="dim">Pairing code </span> <b>4F2A9C</b>
+
+<span class="dim">iPhone</span>  read   instagram.com/p/ridge     <span class="ok">3 photos</span>
+<span class="dim">iPhone</span>  save   1440 × 1800 · original    <span class="ok">done</span>
+<span class="dim">iPhone</span>  read   tiktok.com/@kitchen.loop  <span class="ok">video</span>
+<span class="dim">iPhone</span>  save   2160 × 3840 · original    <span class="ok">done</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="sec" id="gallery" style="padding-top:60px;padding-bottom:80px">
+    <div class="wrap"><div class="sec-head" style="margin-bottom:30px"><p class="eyebrow rv">A closer look</p><h2 class="display rv" style="--d:.08s">Clean, quiet, yours.</h2></div></div>
+    <div class="rail" id="rail">
+      <figure class="rv"><div class="phone" data-img="assets/1-home.jpg"></div><figcaption>Paste a link, or just tap Hoardie</figcaption></figure>
+      <figure class="rv" style="--d:.06s"><div class="phone" data-img="assets/2-preview.jpg"></div><figcaption>See every photo first</figcaption></figure>
+      <figure class="rv" style="--d:.12s"><div class="phone" data-img="assets/4-video.jpg"></div><figcaption>4K video, original sound</figcaption></figure>
+      <figure class="rv" style="--d:.18s"><div class="phone" data-img="assets/3-saved.jpg"></div><figcaption>Saved, with a little tap</figcaption></figure>
+      <figure class="rv" style="--d:.24s"><div class="phone" data-img="assets/5-history.jpg"></div><figcaption>Everything you've kept</figcaption></figure>
+      <figure class="rv" style="--d:.30s"><div class="phone" data-img="assets/6-settings.jpg"></div><figcaption>Simple settings</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="privacy-band" id="privacy">
+    <p class="eyebrow rv" style="color:#9a9ca3">Private by design</p>
+    <h2 class="display rv" style="--d:.08s">What you keep<br><span class="accent">stays</span> yours.</h2>
+    <p class="lede rv" style="--d:.16s">Links travel from your iPhone to your own Mac, and files go straight into your library. There's no account to make and nothing for us to see.</p>
+    <div class="promises rv" style="--d:.24s"><span>No account</span><span>No analytics</span><span>No tracking</span><span>No Hoardie server</span></div>
+    <p class="rv" style="--d:.3s;margin-top:34px"><a class="btn btn-ghost" style="color:#fff" href="privacy.html">Read the Privacy Policy <span class="arr">→</span></a></p>
+  </section>
+
+  <!-- Support / FAQ -->
+  <section class="sec" id="support">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:40px">
+        <p class="eyebrow rv">Support</p>
+        <h2 class="display rv" style="--d:.08s">Good questions.</h2>
+      </div>
+      <div class="faq rv" style="--d:.12s">
+        <details><summary>What can Hoardie save?</summary><div class="ans"><p>Public photos, videos, reels, carousels and pins from Instagram, TikTok, Pinterest, X, Threads, Facebook and YouTube. Paste the link to the post, or copy it and tap the Hoardie button.</p></div></details>
+        <details><summary>Is it really the original quality?</summary><div class="ans"><p>Hoardie saves the best file the platform serves, as is: full resolution, original format, no re-encoding. Platforms compress uploads on their side, so the result matches what the platform keeps, not the creator's camera file.</p></div></details>
+        <details><summary>Why does Hoardie need my Mac?</summary><div class="ans"><p>iPhone apps can't run the tools that read these sites. <strong>Hoardie Helper</strong> runs them on your Mac instead and hands the file to your iPhone over your Wi-Fi. Keep the helper open and both devices on the same network.</p></div></details>
+        <details><summary>Can it save stories or private accounts?</summary><div class="ans"><p>No. Hoardie saves public posts only. Stories and private accounts need a sign-in, and Hoardie never asks for your social accounts.</p></div></details>
+        <details><summary>A link didn't work.</summary><div class="ans"><p>Check that the post is public, that Hoardie Helper is running, and that Settings shows your Mac as <strong>Connected</strong>. Platforms change their sites often; if a link still fails, send it over so it can be fixed.</p></div></details>
+        <details><summary>Can I repost what I save?</summary><div class="ans"><p>What you save is for you. If you want to share someone's work, ask them first and credit them.</p></div></details>
+        <details id="beta"><summary>How do I get Hoardie?</summary><div class="ans"><p>Hoardie is in a small iPhone beta that installs directly, outside the App Store. Request a spot below, and the Mac app will follow.</p></div></details>
+      </div>
+      <div style="text-align:center;margin-top:60px" class="rv">
+        <p class="lede" style="margin-bottom:22px">Want in, or found a link that won't save?</p>
+        <a class="btn btn-ink" href="https://github.com/haafisw/hoardie/issues/new">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final -->
+  <section class="final">
+    <div class="wrap">
+      <span class="mark" id="finalMark"><img src="assets/icon.png" alt=""></span>
+      <h2 class="display words" data-words>Keep what you <span class="accent">love.</span></h2>
+      <div class="cta rv" style="--d:.3s;margin-top:40px"><a class="btn btn-ink" href="#beta">Get the iPhone beta</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Hoardie · Save anything, keep the original.</p>
+    <nav><a href="#support">Support</a><a href="privacy.html">Privacy</a><a href="https://github.com/haafisw/hoardie/issues/new">Contact</a></nav>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="site.js?v=20261127"></script>
+</body>
+</html>
